@@ -41,7 +41,7 @@ class Mailchimp extends React.Component {
     }
     const { status } = this.state;
     return (
-      <form onSubmit={this.handleSubmit.bind(this)} className={className}>
+      <form data-aos-delay="500" data-aos="custom-fadeDown"data-aos-duration="1000" onSubmit={this.handleSubmit.bind(this)} className={className}>
         {fields.map(input =>
           <input
             {...input}
